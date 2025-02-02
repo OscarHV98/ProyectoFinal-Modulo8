@@ -44,8 +44,21 @@ Este proyecto es una aplicación web desarrollada como parte de un programa de d
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
+git clone https://github.com/OscarHV98/ProyectoFinal-Modulo8.git
+```
+#### Frontend
+- Navega al directorio frontEndReact y ejecuta:
+
+```bash
+cd FrontEndReact
+npm install
+```
+#### Backend
+- Navega al directorio backendExpressJS y ejecuta:
+
+```bash
+cd BackendExpressJS
+npm install
 ```
 
 ### 2. Construir y Ejecutar los Contenedores
@@ -155,5 +168,5 @@ La arquitectura de la aplicación consta de tres contenedores:
 
 Este proyecto está bajo la licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
 
-🔗 **Repositorio:** [GitHub](https://github.com/tu-usuario/tu-repositorio)
+🔗 **Repositorio:** [GitHub](https://github.com/OscarHV98/ProyectoFinal-Modulo8.git)
 
