@@ -79,7 +79,7 @@ Esto construye las imágenes y levanta los siguientes servicios:
 docker-compose down
 ```
 
-## Comandos ## Comandos \u00dátiles
+## Comandos 
 
 ### Ver Contenedores en Ejecución
 
