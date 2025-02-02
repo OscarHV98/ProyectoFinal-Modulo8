@@ -8,24 +8,24 @@ CREATE TABLE users (
     last_name VARCHAR(50),
     phone VARCHAR(15),
     address VARCHAR(100),
-    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Valor por defecto
+    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP   -- Valor por defecto
 );
 
 -- Crear la tabla 'professions'
 CREATE TABLE professions (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Valor por defecto
+    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP   -- Valor por defecto
 );
 
 -- Crear la tabla 'locations'
 CREATE TABLE locations (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Valor por defecto
+    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP   -- Valor por defecto
 );
 
 -- Crear la tabla 'offers'
@@ -37,15 +37,15 @@ CREATE TABLE offers (
     userId INT REFERENCES users(id),
     professionId INT REFERENCES professions(id),
     locationId INT REFERENCES locations(id),
-    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Valor por defecto
+    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP   -- Valor por defecto
 );
 
 -- Crear la tabla 'offers_users'
 CREATE TABLE offers_users (
     offerId INT REFERENCES offers(id),
     userId INT REFERENCES users(id),
-    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Valor por defecto
+    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP   -- Valor por defecto
     PRIMARY KEY (offerId, userId)
 );

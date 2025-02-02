@@ -24,6 +24,7 @@ Este proyecto es una aplicación web desarrollada como parte de un programa de d
 │   ├── init.sql              # Script SQL para crear tablas y datos iniciales
 │   ├── Dockerfile            # Dockerfile para el contenedor de la base de datos
 ├── docker-compose.yml        # Archivo de configuración de Docker Compose
+├── .env                      # Variables de entorno
 ├── README.md                 # Documentación del proyecto
 ```
 
@@ -136,6 +137,14 @@ docker push tu-usuario-dockerhub/database:latest
 ```
 
 ## Documentación Adicional
+
+### Repositorios Docker Hub
+
+```bash
+docker push oscarhv98/database-mod8:tagname
+docker push oscarhv98/backend-mod8:tagname
+docker push oscarhv98/frontend-mod8:tagname
+```
 
 ### Diagrama de Base de Datos
 
