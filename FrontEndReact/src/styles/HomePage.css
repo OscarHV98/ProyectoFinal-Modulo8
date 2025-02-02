@@ -1,0 +1,56 @@
+/* Estilo global para la página */
+.page-container {
+    background: linear-gradient(to bottom right, #ebedef, #81c0c7);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Estilo para el título principal */
+  .home-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilo para el subtítulo */
+  .home-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Contenedor para los botones de acción */
+  .action-buttons {
+    margin-top: 2rem;
+  }
+  
+  /* Estilo para el botón "Explorar Ofertas" */
+  .explore-btn {
+    background-color: #1a78d6 !important;
+    color: #333;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore-btn:hover {
+    background-color: #2a6caf !important;
+  }
+  
+  /* Estilo para el botón "Regístrate" */
+  .signup-btn {
+    background-color: transparent;
+    color: #ffeb3b !important;
+    border: 2px solid #ffeb3b !important;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    background-color: #ffeb3b !important;
+    color: #333;
+    border-color: #fbc02d !important;
+  }
+  

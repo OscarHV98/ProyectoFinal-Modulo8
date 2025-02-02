@@ -1,0 +1,128 @@
+
+/* Contenedor principal de la página */
+.offers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título principal */
+.offers-container h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de las tarjetas */
+.users-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilos para cada tarjeta de oferta */
+.offer-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el contenido dentro de la tarjeta */
+.offer-card h6 {
+    color: #1976d2;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.offer-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Precio destacado */
+.offer-price {
+    color: green;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Estilos para detalles adicionales */
+.offer-details {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .users-list {
+        grid-template-columns: 1fr;
+    }
+
+    .offers-container {
+        padding: 10px;
+    }
+}
+
+
+
+/* Modal  */
+
+/* Estilos del modal */
+.offer-modal {
+    background: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+}
+
+/* Título del modal */
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Formulario dentro del modal */
+.offer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botones de acción */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Botón primario */
+button {
+    width: 48%;
+}

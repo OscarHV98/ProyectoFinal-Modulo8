@@ -1,0 +1,43 @@
+/* Estilos generales para la AppBar */
+.navbar {
+    background-color: #2a6caf !important; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease-in-out; 
+  }
+  
+  .navbar-title {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .navbar-btn {
+    font-weight: 600;
+    margin-left: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  
+  .navbar-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efecto hover en los botones */
+  }
+  
+  .drawer-item {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 600px) {
+    .navbar {
+      background-color: #2a6caf; /* Color más oscuro para móviles */
+    }
+  
+    .navbar-btn {
+      font-size: 14px;
+    }
+  
+    .drawer-item {
+      font-size: 16px;
+    }
+  }
+  

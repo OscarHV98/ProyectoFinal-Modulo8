@@ -1,0 +1,12 @@
+/* src/styles/LocationsPage.css */
+
+.locations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locations-list {
+    width: 100%;
+    max-width: 600px;
+}

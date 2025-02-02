@@ -1,0 +1,13 @@
+/* src/styles/UsersPage.css */
+
+.users-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.users-list {
+    width: 100%;
+    max-width: 600px;
+}

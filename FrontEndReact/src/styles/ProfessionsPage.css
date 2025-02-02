@@ -1,0 +1,21 @@
+/* src/styles/ProfessionsPage.css */
+
+.professions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.professions-list {
+    width: 100%;
+    max-width: 600px;
+}
+
+.content-button {
+    display: flex;
+    justify-content: start;
+    gap: 15px
+}
+.table-button {
+    width: 100px !important;
+}

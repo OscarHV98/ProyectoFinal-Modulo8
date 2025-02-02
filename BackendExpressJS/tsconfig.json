@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                     // La versión de JavaScript a la que se compilará.
+    "module": "commonjs",                // El sistema de módulos que utilizará (CommonJS para Node.js).
+    "rootDir": "./src",                  // La carpeta raíz donde se encuentran los archivos fuente.
+    "outDir": "./dist",                  // La carpeta donde se generarán los archivos compilados.
+    "strict": true,                       // Habilita todas las opciones de verificación estricta.
+    "esModuleInterop": true,              // Permite la interoperabilidad entre módulos ES y CommonJS.
+    "skipLibCheck": true,                 // Omite la verificación de tipos de archivos de declaración.
+    "forceConsistentCasingInFileNames": true, // Fuerza el uso consistente de mayúsculas en nombres de archivo.
+    "noUnusedLocals": true,               // Reporta errores sobre variables locales no utilizadas.
+    "noUnusedParameters": true,           // Reporta errores sobre parámetros no utilizados en funciones.
+    "noImplicitAny": true,                // Requiere que se especifiquen tipos para evitar el uso implícito de `any`.
+    "strictNullChecks": true,             // Activa la comprobación estricta de null y undefined.
+    "noImplicitThis": true                 // Requiere que `this` tenga un tipo explícito.
+  },
+  "include": ["src/**/*.ts"],            // Archivos a incluir en la compilación.
+  "exclude": ["node_modules", "**/*.spec.ts"]            // Archivos y carpetas a excluir de la compilación.
+}
