@@ -3,9 +3,9 @@ export interface Oferta {
     title: string;
     description: string;
     price: number;
-    userId: number;
-    professionId: number;
-    locationId: number;
+    user_id: number;
+    profession_id: number;
+    location_id: number;
     User?: User;
     Profession?: Profession;
     Location?: Location;

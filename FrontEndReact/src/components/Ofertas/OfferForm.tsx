@@ -19,9 +19,9 @@ const OfferForm = ({ open, handleClose, handleUpdate }: Props) => {
         title: '',
         description: '',
         price: 0,
-        locationId: 0,
-        professionId: 0,
-        userId: 0
+        location_id: 0,
+        profession_id: 0,
+        user_id: 0
     });
 
     const [users, setUsers] = useState<User[]>([]);
@@ -75,9 +75,9 @@ const OfferForm = ({ open, handleClose, handleUpdate }: Props) => {
                 title: '',
                 description: '',
                 price: 0,
-                locationId: 0,
-                professionId: 0,
-                userId: 0
+                location_id: 0,
+                profession_id: 0,
+                user_id: 0
             });
             handleUpdate();
             handleClose();
@@ -131,22 +131,22 @@ const OfferForm = ({ open, handleClose, handleUpdate }: Props) => {
                         <MultipleSelect
                             label="Usuarios"
                             options={users.map(user => ({ id: user.id, name: user.username }))}
-                            value={offerData.userId}
-                            onChange={(selected) => setOfferData({ ...offerData, userId: selected })}
+                            value={offerData.user_id}
+                            onChange={(selected) => setOfferData({ ...offerData, user_id: selected })}
                         />
 
                         <MultipleSelect
                             label="Profesiones"
                             options={profesiones.map(profesion => ({ id: profesion.id, name: profesion.name }))}
-                            value={offerData.professionId}
-                            onChange={(selected) => setOfferData({ ...offerData, professionId: selected })}
+                            value={offerData.profession_id}
+                            onChange={(selected) => setOfferData({ ...offerData, profession_id: selected })}
                         />
 
                         <MultipleSelect
                             label="Ubicaciones"
                             options={ubicaciones.map(ubicacion => ({ id: ubicacion.id, name: ubicacion.name }))}
-                            value={offerData.locationId}
-                            onChange={(selected) => setOfferData({ ...offerData, locationId: selected })}
+                            value={offerData.location_id}
+                            onChange={(selected) => setOfferData({ ...offerData, location_id: selected })}
                         />
 
                         <div className="modal-actions">

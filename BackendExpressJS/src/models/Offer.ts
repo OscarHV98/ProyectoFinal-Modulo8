@@ -9,9 +9,9 @@ class Offer extends Model {
     public title!: string;
     public description!: string;
     public price!: number;
-    public userId!: number;          // ID de usuario (relación con User)
-    public professionId!: number;    // ID de profesión (relación con Profession)
-    public locationId!: number;      // ID de ubicación (relación con Location)
+    public user_id!: number;          // ID de usuario (relación con User)
+    public profession_id!: number;    // ID de profesión (relación con Profession)
+    public location_id!: number;      // ID de ubicación (relación con Location)
   }
 
   Offer.init(
@@ -33,7 +33,7 @@ class Offer extends Model {
         type: DataTypes.FLOAT,
         allowNull: false,
       },
-      userId: {
+      user_id: {
         type: DataTypes.INTEGER,
         references: {
           model: User,
@@ -41,7 +41,7 @@ class Offer extends Model {
         },
         allowNull: false,
       },
-      professionId: {
+      profession_id: {
         type: DataTypes.INTEGER,
         references: {
           model: Profession,
@@ -49,7 +49,7 @@ class Offer extends Model {
         },
         allowNull: false,
       },
-      locationId: {
+      location_id: {
         type: DataTypes.INTEGER,
         references: {
           model: Location,
